@@ -19,7 +19,7 @@ function Experience({
   mission: (typeof missions)[0];
   odd: boolean;
 }) {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   return (
     <Stack direction={odd ? "row" : "row-reverse"} sx={{}}>
