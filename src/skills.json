@@ -183,5 +183,15 @@
     "title": "Azure Serverless Python",
     "category": "Backend",
     "stars": 5
+  },
+  {
+    "title": "GraphQL",
+    "category": "Backend",
+    "stars": 5
+  },
+  {
+    "title": "Apollo GraphQL",
+    "category": "Backend",
+    "stars": 5
   }
 ]
