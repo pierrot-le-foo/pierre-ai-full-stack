@@ -1,0 +1,187 @@
+[
+  {
+    "title": "JavaScript",
+    "category": "language",
+    "stars": 5
+  },
+  {
+    "title": "TypeScript",
+    "category": "language",
+    "stars": 5
+  },
+  {
+    "title": "Python",
+    "category": "language",
+    "stars": 4
+  },
+  {
+    "title": "PHP",
+    "category": "language",
+    "stars": 3
+  },
+  {
+    "title": "Rust",
+    "category": "language",
+    "stars": 2
+  },
+  {
+    "title": "Java",
+    "category": "language",
+    "stars": 2
+  },
+  {
+    "title": "Go",
+    "category": "language",
+    "stars": 1
+  },
+  {
+    "title": "Bash",
+    "category": "language",
+    "stars": 4
+  },
+  {
+    "title": "Langchain",
+    "category": "AI",
+    "stars": 4
+  },
+  {
+    "title": "PostgreSQL",
+    "category": "database",
+    "stars": 4
+  },
+  {
+    "title": "MongoDB",
+    "category": "database",
+    "stars": 5
+  },
+  {
+    "title": "FaunaDB",
+    "category": "database",
+    "stars": 3
+  },
+  {
+    "title": "React",
+    "category": "UI",
+    "stars": 5
+  },
+  {
+    "title": "React Native",
+    "category": "UI",
+    "stars": 4
+  },
+  {
+    "title": "Material UI",
+    "category": "UI",
+    "stars": 5
+  },
+  {
+    "title": "Storybook",
+    "category": "UI",
+    "stars": 4
+  },
+  {
+    "title": "Jest",
+    "category": "Testing",
+    "stars": 5
+  },
+  {
+    "title": "Cypress",
+    "category": "Testing",
+    "stars": 5
+  },
+  {
+    "title": "OpenAI",
+    "category": "AI",
+    "stars": 5
+  },
+  {
+    "title": "ChromaDB",
+    "category": "AI",
+    "stars": 4
+  },
+  {
+    "title": "Llama",
+    "category": "AI",
+    "stars": 4
+  },
+  {
+    "title": "Whisper",
+    "category": "AI",
+    "stars": 5
+  },
+  {
+    "title": "Speaker Diarization",
+    "category": "AI",
+    "stars": 5
+  },
+  {
+    "title": "OCR",
+    "category": "AI",
+    "stars": 5
+  },
+  {
+    "title": "React Testing Library",
+    "category": "Testing",
+    "stars": 5
+  },
+  {
+    "title": "Elastic Search",
+    "category": "database",
+    "stars": 3
+  },
+  {
+    "title": "TailWindCSS",
+    "category": "UI",
+    "stars": 4
+  },
+  {
+    "title": "Puppeteer",
+    "category": "Testing",
+    "stars": 4
+  },
+  {
+    "title": "HTML 5",
+    "category": "UI",
+    "stars": 5
+  },
+  {
+    "title": "CSS",
+    "category": "UI",
+    "stars": 4
+  },
+  {
+    "title": "SASS",
+    "category": "UI",
+    "stars": 4
+  },
+  {
+    "title": "LLM",
+    "category": "AI",
+    "stars": 5
+  },
+  {
+    "title": "HuggingFace AutoTrain",
+    "category": "AI",
+    "stars": 4
+  },
+  {
+    "title": "NextJS",
+    "category": "Backend",
+    "stars": 5
+  },
+  {
+    "title": "AWS Lambda Node",
+    "category": "Backend",
+    "stars": 5
+  },
+  {
+    "title": "AWS Lambda Python",
+    "category": "Backend",
+    "stars": 5
+  },
+  {
+    "title": "Azure Serverless Python",
+    "category": "Backend",
+    "stars": 5
+  }
+]

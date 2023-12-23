@@ -1,0 +1,56 @@
+[
+  {
+    "title": "AI Developer",
+    "dates": ["2023/09/01", "2023/12/11"],
+    "company": "SIMMS&Associates",
+    "tasks": [
+      "LLama RAG",
+      "MicroSoft Team Bot",
+      "Pretrain model with dataset and HuggingFace"
+    ]
+  },
+  {
+    "title": "AI Developer",
+    "dates": ["2023/09/01", "2023/11/01"],
+    "company": "DMS",
+    "tasks": [
+      "CompuVision OCR based with LLM",
+      "Speech-to-Text with OpenAI Whisper",
+      "Speech Recognition with Numpy and Diarization",
+      "Scene Detection with OpenCV and Tensorflow"
+    ]
+  },
+  {
+    "title": "Full Stack Senior Developer",
+    "dates": ["2023/02/01", "2023/09/01"],
+    "company": "Blinkin",
+    "tasks": [
+      "React Testing with Cypress",
+      "Unit Testing with Laravel",
+      "TypeForm Integration with React Flow",
+      "Object Detection with Serp API integrated with OpenAI"
+    ]
+  },
+  {
+    "title": "Full Stack Senior Developer",
+    "dates": ["2018/01/01", "2022/11/31"],
+    "company": "Psychiatry UK",
+    "tasks": [
+      "Database Administrator of over 5 million patients",
+      "RFC Solution For Payments in Pharmacies all over UK",
+      "Document Generator for NHS Invoice",
+      "NextJS Admin Panel for doctor-patient communication"
+    ]
+  },
+  {
+    "title": "Full Stack Senior Developer",
+    "dates": ["2018-01-01", "2018-12-31"],
+    "company": "Zencastr",
+    "tasks": [
+      "ReactJS Frontend",
+      "NodeJS Backend",
+      "WebRTC Integration",
+      "Audio Processing with WebAssembly"
+    ]
+  }
+]
