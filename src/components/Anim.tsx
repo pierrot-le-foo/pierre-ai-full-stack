@@ -21,11 +21,6 @@ export default function Anim() {
         <ambientLight intensity={1.5} />
         <pointLight position={[10, 10, 10]} />
         <directionalLight position={[0, 0, 5]} intensity={0} />
-        <hemisphereLight
-          skyColor="#ffffff"
-          groundColor="#000000"
-          intensity={1}
-        />
 
         <KoiFish isRotating={isRotating} setIsRotating={setIsRotating} />
       </Suspense>
