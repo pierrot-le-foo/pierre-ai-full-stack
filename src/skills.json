@@ -203,5 +203,15 @@
     "title": "Supabase",
     "category": "Backend",
     "stars": 4
+  },
+  {
+    "title": "FastAPI",
+    "category": "Backend",
+    "stars": 4
+  },
+  {
+    "title": "LangServe",
+    "category": "Backend",
+    "stars": 4
   }
 ]
