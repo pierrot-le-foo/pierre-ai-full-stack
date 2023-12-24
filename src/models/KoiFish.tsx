@@ -10,7 +10,7 @@ import React, { useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 import { a } from '@react-spring/three'
 
-export function KoiFish(props) {
+export function KoiFish(props: any) {
   const group = useRef();
   const { nodes, materials, animations } = useGLTF("/koi_fish.glb");
   const { actions } = useAnimations(animations, group);
@@ -30,9 +30,12 @@ export function KoiFish(props) {
                   name="mesh_0"
                   castShadow
                   receiveShadow
+                  // @ts-ignore
                   geometry={nodes.mesh_0.geometry}
                   material={materials.SimplygonCastMaterial}
+                  // @ts-ignore
                   morphTargetDictionary={nodes.mesh_0.morphTargetDictionary}
+                  // @ts-ignore
                   morphTargetInfluences={nodes.mesh_0.morphTargetInfluences}
                 />
               </group>
