@@ -24,6 +24,8 @@ export default function Skills() {
         onChange={(e, v) => {
           setTab(v);
         }}
+        variant="scrollable"
+        scrollButtons="auto"
       >
         {categories.map((category, index) => (
           <Tab key={index} label={category} />
@@ -37,7 +39,7 @@ export default function Skills() {
           ["desc", "asc"]
         ).map((skill, index) => (
           <ListItem key={index}>
-            <ListItemButton sx={{borderRadius:2}}>
+            <ListItemButton sx={{ borderRadius: 2 }}>
               <ListItemText primary={skill.title} />
               {range(0, skill.stars).map((index) => (
                 <StarIcon key={index} />

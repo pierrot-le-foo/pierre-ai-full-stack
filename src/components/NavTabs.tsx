@@ -44,6 +44,8 @@ export default function NavTabs() {
       onChange={(_event, newValue) => {
         setTab(newValue);
       }}
+      variant="scrollable"
+      scrollButtons="auto"
     >
       {TABS.map((tab, index) => (
         <Tab key={index} label={tab.label} />
