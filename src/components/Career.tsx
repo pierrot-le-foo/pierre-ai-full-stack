@@ -1,9 +1,7 @@
 import Stack from "@mui/material/Stack";
 import missions from "@/missions.json";
 import Typography from "@mui/material/Typography";
-import SettingsEthernetIcon from "@mui/icons-material/SettingsEthernet";
 import CircleIcon from "@mui/icons-material/Circle";
-import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
@@ -11,6 +9,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { useState } from "react";
 import Collapse from "@mui/material/Collapse";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 function Experience({
   mission,
@@ -20,6 +19,7 @@ function Experience({
   odd: boolean;
 }) {
   const [open, setOpen] = useState(true);
+  const matches = useMediaQuery("(min-width:600px)");
 
   return (
     <Stack direction={odd ? "row" : "row-reverse"} sx={{}}>
@@ -78,7 +78,7 @@ function Experience({
           </Collapse>
         </Stack>
       </Stack>
-      <Stack sx={{ flex: 1 }}></Stack>
+      {matches && <Stack sx={{ flex: 1 }}></Stack>}
     </Stack>
   );
 
