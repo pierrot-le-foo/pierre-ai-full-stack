@@ -7,18 +7,50 @@ import ListItemButton from "@mui/material/ListItemButton";
 import uniq from "lodash/uniq";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import StarIcon from "@mui/icons-material/Star";
 import StarBorderIcon from "@mui/icons-material/StarBorder";
 import range from "lodash/range";
 import orderBy from "lodash/orderBy";
+import TextField from "@mui/material/TextField";
+
+const allCategories = uniq(skills.map((skill) => skill.category));
 
 export default function Skills() {
-  const categories = uniq(skills.map((skill) => skill.category));
   const [tab, setTab] = useState(0);
+  const [search, setSearch] = useState("");
+  const [selectedSkills, setSelectedSkills] =
+    useState<(typeof skills)[0][]>(skills);
+  const [categories, setCategories] = useState(allCategories);
+
+  useEffect(() => {
+    if (search) {
+      setSelectedSkills(
+        skills.filter((skill) =>
+          skill.title.toLowerCase().includes(search.toLowerCase())
+        )
+      );
+    } else {
+      setSelectedSkills(skills);
+      setCategories(allCategories);
+    }
+  }, [search]);
+
+  useEffect(() => {
+    setCategories(uniq(selectedSkills.map((skill) => skill.category)));
+  }, [selectedSkills]);
 
   return (
     <Stack>
+      <TextField
+        label="Search"
+        variant="outlined"
+        value={search}
+        onChange={(e) => {
+          setSearch(e.target.value);
+        }}
+      />
+
       <Tabs
         value={tab}
         onChange={(e, v) => {
@@ -34,7 +66,7 @@ export default function Skills() {
 
       <List>
         {orderBy(
-          skills.filter((skill) => skill.category === categories[tab]),
+          selectedSkills.filter((skill) => skill.category === categories[tab]),
           ["stars", "title"],
           ["desc", "asc"]
         ).map((skill, index) => (

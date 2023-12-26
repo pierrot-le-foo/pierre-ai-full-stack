@@ -6,17 +6,121 @@ Source: https://sketchfab.com/3d-models/koi-fish-236859b809984f52b70c94fd040b9c5
 Title: Koi Fish
 */
 
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
-import { a } from '@react-spring/three'
+import { a, Globals } from "@react-spring/three";
+import { useFrame, useThree } from "@react-three/fiber";
 
-export function KoiFish(props: any) {
-  const group = useRef();
+Globals.assign({
+	frameLoop: "always",
+});
+
+interface KoiFishProps {
+  isRotating: boolean;
+  setIsRotating: React.Dispatch<React.SetStateAction<boolean>>;
+  setCurrentStage: React.Dispatch<React.SetStateAction<number | null>>;
+}
+
+export function KoiFish({
+  isRotating,
+  setIsRotating,
+  setCurrentStage,
+  ...props
+}: KoiFishProps) {
+  const group = useRef<any>();
   const { nodes, materials, animations } = useGLTF("/koi_fish.glb");
-  const { actions } = useAnimations(animations, group);
-  const ref = useRef()
+  // const { actions } = useAnimations(animations, group);
+  const { gl, viewport } = useThree();
+
+  const lastX = useRef(0);
+  const rotationSpeed = useRef(0);
+  const dampingFactor = 0.1;
+
+  useEffect(() => {
+    const canvas = gl.domElement;
+
+    const handlePointerDown = (e: MouseEvent) => {
+      e.stopPropagation();
+      e.preventDefault();
+      setIsRotating(true);
+
+      // @ts-ignore
+      const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+
+      lastX.current = clientX;
+    };
+
+    const handlePointerUp = (e: any) => {
+      e.stopPropagation();
+      e.preventDefault();
+      setIsRotating(false);
+    };
+
+    const handlePointerMove = (e: any) => {
+      e.stopPropagation();
+      e.preventDefault();
+
+      if (isRotating) {
+        const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+
+        const delta = (clientX - lastX.current) / viewport.width;
+
+        group.current.rotation.y += delta * 0.01 * Math.PI;
+
+        lastX.current = clientX;
+
+        rotationSpeed.current = delta * 0.01 * Math.PI;
+      }
+    };
+
+    canvas.addEventListener("pointermove", handlePointerMove);
+    canvas.addEventListener("pointerup", handlePointerUp);
+    canvas.addEventListener("pointerdown", handlePointerDown);
+
+    return () => {
+      canvas.removeEventListener("pointermove", handlePointerMove);
+      canvas.removeEventListener("pointerup", handlePointerUp);
+      canvas.removeEventListener("pointerdown", handlePointerDown);
+    };
+  }, [gl]);
+
+  useFrame((state, delta) => {
+    if (!isRotating) {
+      // ref.current.rotation.y += rotationSpeed.current;
+      rotationSpeed.current *= dampingFactor;
+
+      if (Math.abs(rotationSpeed.current) < 0.001) {
+        rotationSpeed.current = 0;
+      }
+    } else {
+      console.log(group.current)
+      const rotation = group.current.rotation.y;
+
+      const normalizedRotation =
+        ((rotation % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
+
+      // Set the current stage based on the island's orientation
+      switch (true) {
+        case normalizedRotation >= 5.45 && normalizedRotation <= 5.85:
+          setCurrentStage(4);
+          break;
+        case normalizedRotation >= 0.85 && normalizedRotation <= 1.3:
+          setCurrentStage(3);
+          break;
+        case normalizedRotation >= 2.4 && normalizedRotation <= 2.6:
+          setCurrentStage(2);
+          break;
+        case normalizedRotation >= 4.25 && normalizedRotation <= 4.75:
+          setCurrentStage(1);
+          break;
+        default:
+          setCurrentStage(null);
+      }
+    }
+  });
+
   return (
-    <group ref={group} {...props} dispose={null}>
+    <a.group ref={group} {...props}>
       <group name="Sketchfab_Scene">
         <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]}>
           <group name="root">
@@ -43,7 +147,7 @@ export function KoiFish(props: any) {
           </group>
         </group>
       </group>
-    </group>
+    </a.group>
   );
 }
 

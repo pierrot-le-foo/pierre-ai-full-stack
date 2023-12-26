@@ -4,12 +4,10 @@ import { Suspense, useState } from "react";
 
 export default function Anim() {
   const [isRotating, setIsRotating] = useState(false);
+  const [currentStage, setCurrentStage] = useState<number|null>(1);
 
   return (
     <Canvas
-      className={`relative bg-white ${
-        isRotating ? "cursor-grabbing" : "cursor-grab"
-      }`}
       camera={{ near: 0.1, far: 1000 }}
       style={{
         width: 200,
@@ -22,7 +20,11 @@ export default function Anim() {
         <pointLight position={[10, 10, 10]} />
         <directionalLight position={[0, 0, 5]} intensity={0} />
 
-        <KoiFish isRotating={isRotating} setIsRotating={setIsRotating} />
+        <KoiFish
+          isRotating={isRotating}
+          setIsRotating={setIsRotating}
+          setCurrentStage={setCurrentStage}
+        />
       </Suspense>
     </Canvas>
   );

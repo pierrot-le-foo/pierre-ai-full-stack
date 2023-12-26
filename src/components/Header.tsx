@@ -17,7 +17,7 @@ export default function Header() {
       direction={matches ? "row" : "row"}
       spacing={matches ? 4 : 2}
       alignItems="center"
-      p={matches?4:1}
+      p={matches ? 2 : 1}
       component={Paper}
     >
       <Stack>
