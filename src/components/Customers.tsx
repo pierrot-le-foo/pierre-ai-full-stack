@@ -18,7 +18,7 @@ export default function Customers() {
               <Stack key={customer.name} p={4}>
                 <Stack spacing={matches ? 9 : 7}>
                   <Avatar
-                    src={customer.image}
+                    src={`/${customer.image}`}
                     alt={customer.name}
                     sx={{
                       boxShadow: "0 40px 25px 5px rgba(0, 0, 0, 0.3)",

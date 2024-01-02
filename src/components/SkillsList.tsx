@@ -20,7 +20,7 @@ export default function SkillsList() {
                 <Stack key={skill.title} p={4}>
                   <Stack spacing={matches ? 9 : 7}>
                     <Avatar
-                      src={skill.icon}
+                      src={`/${skill.icon}`}
                       alt={skill.title}
                       sx={{
                         boxShadow: "0 40px 25px 5px rgba(0, 0, 0, 0.5)",
