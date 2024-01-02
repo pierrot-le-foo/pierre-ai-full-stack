@@ -24,9 +24,12 @@ export default function Header() {
         <Avatar src="/me.png" sx={{ width: dim, height: dim }} />
       </Stack>
 
-      <Stack sx={{ flex: 1 }}>
+      <Stack sx={{ flex: 1 }} direction="row" spacing={1}>
         <Typography variant={matches ? "h2" : "h4"}>
           Pierre
+        </Typography>
+        <Typography variant={matches ? "h2" : "h4"} sx={{color:'#666'}}>
+          developer
         </Typography>
       </Stack>
 

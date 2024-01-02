@@ -34,5 +34,11 @@
     "description": "UK's National Online Psychiatry Service",
     "url": "https://www.nhs.uk/",
     "image": "saa.png"
+  },
+  {
+    "name": "Ole Sanbot",
+    "description": "UK's National Online Psychiatry Service",
+    "url": "https://www.nhs.uk/",
+    "image": "sanbot.jpg"
   }
 ]
