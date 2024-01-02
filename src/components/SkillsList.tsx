@@ -12,8 +12,8 @@ export default function SkillsList() {
     <Stack py={matches ? 2 : 1}>
       <Typography variant={matches ? "h4" : "h5"}>Skills</Typography>
 
-      <Stack sx={{ overflowX: "scroll" }}>
-        <Stack direction="row">
+      <Stack >
+        <Stack direction="row" sx={{flexWrap:'wrap'}}>
           {orderBy(skills, ["focus", "stars"], ["desc", "desc"]).map(
             (skill) => {
               return (
