@@ -7,7 +7,7 @@ import Layout from "@/components/Layout";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Pierre Drouillet",
+  title: "Pierre",
   description: "AI Full Stack Developer",
   publisher: "noindex, nofollow",
 };

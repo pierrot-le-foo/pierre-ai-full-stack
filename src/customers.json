@@ -1,0 +1,38 @@
+[
+  {
+    "name": "zencastr",
+    "description": "High quality podcasts",
+    "url": "https://zencastr.com",
+    "image": "zencastr.jpg"
+  },
+  {
+    "name": "blinkin",
+    "description": "AI Companion Experiences for Customers",
+    "url": "https://blinkin.io",
+    "image": "blinkin.png"
+  },
+  {
+    "name": "nhs",
+    "description": "UK National Health Service",
+    "url": "https://www.nhs.uk/",
+    "image": "nhs.jpg"
+  },
+  {
+    "name": "psychiatry-uk",
+    "description": "UK's National Online Psychiatry Service",
+    "url": "https://www.nhs.uk/",
+    "image": "puk2.png"
+  },
+  {
+    "name": "DMS",
+    "description": "UK's National Online Psychiatry Service",
+    "url": "https://www.nhs.uk/",
+    "image": "dms.jpg"
+  },
+  {
+    "name": "Simms & Associates",
+    "description": "UK's National Online Psychiatry Service",
+    "url": "https://www.nhs.uk/",
+    "image": "saa.png"
+  }
+]

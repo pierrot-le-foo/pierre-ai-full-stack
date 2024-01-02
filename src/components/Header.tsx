@@ -25,13 +25,12 @@ export default function Header() {
       </Stack>
 
       <Stack sx={{ flex: 1 }}>
-        <Typography variant={matches ? "h2" : "h4"} align="center">
-          Pierre Drouillet
+        <Typography variant={matches ? "h2" : "h4"}>
+          Pierre
         </Typography>
-        <NavTabs />
       </Stack>
 
-      {matches && <Anim />}
+      {/* {matches && <Anim />} */}
     </Stack>
   );
 }
