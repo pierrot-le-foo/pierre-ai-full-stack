@@ -314,5 +314,19 @@
     "stars": 3,
     "focus": 5,
     "icon": "pytorch.png"
+  },
+  {
+    "title": "Zapier",
+    "category": "AI",
+    "stars": 4,
+    "focus": 6,
+    "icon": "zapier.png"
+  },
+  {
+    "title": "Make",
+    "category": "AI",
+    "stars": 4,
+    "focus": 5,
+    "icon": "make.png"
   }
 ]
