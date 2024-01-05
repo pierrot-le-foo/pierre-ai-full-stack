@@ -6,6 +6,7 @@ import { NextResponse } from "next/server";
 import { configPool } from "@/lib/pg";
 import { createPool, sql } from '@vercel/postgres';
 import { postgresConnectionString } from '@vercel/postgres';
+import { join } from "path";
 
 
 interface Payload {
@@ -28,7 +29,7 @@ const embeddings = new OpenAIEmbeddings({
 export async function POST(request: Request) {
   const { file, name, description } = (await request.json()) as Payload;
 
-  const content = await readFile(file, "utf-8");
+  const content = await readFile(join(process.cwd(), file), "utf-8");
 
   const client = await createPool().connect()
 
