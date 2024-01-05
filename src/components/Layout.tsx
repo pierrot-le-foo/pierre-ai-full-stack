@@ -22,7 +22,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <Header />
 
           <main style={{ flex: 1, overflow: "auto" }}>
-            <Stack p={4}>{children}</Stack>
+            <Stack p={0}>{children}</Stack>
           </main>
         </Stack>
       </Paper>
