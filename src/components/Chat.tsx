@@ -18,7 +18,7 @@ import Slide from "@mui/material/Slide";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 interface ChatProps {
-  leadID: string
+  leadID: string;
 }
 
 const LIMIT = 10000;
@@ -157,7 +157,7 @@ export default function Chat({ leadID }: ChatProps) {
       )}
 
       {!limitReached && (
-        <Stack direction="row" style={{ marginTop: 30 }}>
+        <Stack direction="row" style={{ marginTop: showHireMe ? 0 : 30 }}>
           <TextField
             variant="outlined"
             value={value}
@@ -166,7 +166,7 @@ export default function Chat({ leadID }: ChatProps) {
             fullWidth
             placeholder="Ask Pierre a question"
             name="prompt"
-            disabled={loading || limitReached}
+            disabled={loading || limitReached || showHireMe}
             id="prompt"
             onKeyUp={(e) => {
               if (e.key === "Enter") {
@@ -179,7 +179,7 @@ export default function Chat({ leadID }: ChatProps) {
             variant="contained"
             onClick={handleSend}
             color="primary"
-            disabled={loading || limitReached}
+            disabled={loading || limitReached || showHireMe}
           >
             <SendIcon />
           </Button>
