@@ -3,42 +3,125 @@
     "name": "zencastr",
     "description": "High quality podcasts",
     "url": "https://zencastr.com",
-    "image": "zencastr.jpg"
+    "image": "zencastr.jpg",
+    "from": "2019",
+    "to": "2021",
+    "skills": [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "MongoDB",
+      "Google Cloud Platform",
+      "Redis",
+      "Redux",
+      "HTML5"
+    ]
   },
   {
     "name": "blinkin",
     "description": "AI Companion Experiences for Customers",
     "url": "https://blinkin.io",
-    "image": "blinkin.png"
+    "image": "blinkin.png",
+    "from": "2022",
+    "to": "2023",
+    "skills": [
+      "TypeScript",
+      "NodeJS",
+      "PHP",
+      "Laravel",
+      "Cypress",
+      "Azure",
+      "Make",
+      "PostgresQL",
+      "Serp API",
+      "OpenAI",
+      "Streamlit"
+    ]
   },
   {
     "name": "nhs",
     "description": "UK National Health Service",
     "url": "https://www.nhs.uk/",
-    "image": "nhs.jpg"
+    "image": "nhs.jpg",
+    "from": "2020",
+    "to": "2023",
+    "skills": [
+      "TensorFlow"
+    ]
   },
   {
     "name": "psychiatry-uk",
     "description": "UK's National Online Psychiatry Service",
-    "url": "https://www.nhs.uk/",
-    "image": "puk2.png"
+    "url": "https://psychiatry-uk.com/",
+    "image": "puk2.png",
+    "from": "2020",
+    "to": "2023",
+    "skills": [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "NodeJS",
+      "Express",
+      "PostgresQL",
+      "Redis",
+      "HTML5",
+      "CSS3",
+      "SASS",
+      "Jest",
+      "Puppeteer",
+      "Heroku",
+      "Azure",
+      "Docker",
+      "GitHub",
+      "Jira",
+      "Confluence",
+      "Trello",
+      "Slack",
+      "Teams"
+    ]
   },
   {
     "name": "DMS",
-    "description": "UK's National Online Psychiatry Service",
-    "url": "https://www.nhs.uk/",
-    "image": "dms.jpg"
+    "description": "Full-service creative digital agency",
+    "url": "https://www.dmsukltd.com/",
+    "image": "dms.jpg",
+    "from": "2023",
+    "to": "2024",
+    "skills": [
+      "Typescript",
+      "React",
+      "GraphQL",
+      "Apollo",
+      "Whisper",
+      "OpenOCR",
+      "Numpy"
+    ]
   },
   {
     "name": "Simms & Associates",
-    "description": "UK's National Online Psychiatry Service",
-    "url": "https://www.nhs.uk/",
-    "image": "saa.png"
+    "description": "Financial education resources",
+    "url": "https://www.simmassociates.com/",
+    "image": "saa.png",
+    "from": "2023",
+    "to": "2024",
+    "skills": [
+      "Microsoft Teams SDK",
+      "LangChain",
+      "Llama"
+    ]
   },
   {
     "name": "Ole Sanbot",
-    "description": "UK's National Online Psychiatry Service",
-    "url": "https://www.nhs.uk/",
-    "image": "sanbot.jpg"
+    "description": "Sanbot for library",
+    "url": "https://www.example.com/",
+    "image": "sanbot.jpg",
+    "from": "2023",
+    "to": "2024",
+    "skills": [
+      "LangChain",
+      "Android",
+      "Llama",
+      "PGVector"
+    ]
   }
 ]

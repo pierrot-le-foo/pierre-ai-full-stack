@@ -4,63 +4,72 @@
     "category": "language",
     "stars": 5,
     "icon": "js.png",
-    "focus": 5
+    "focus": 5,
+    "years": 20
   },
   {
     "title": "TypeScript",
     "category": "language",
     "stars": 5,
     "icon": "ts.png",
-    "focus": 7
+    "focus": 7,
+    "years": 7
   },
   {
     "title": "Python",
     "category": "language",
     "stars": 4,
     "icon": "py.png",
-    "focus": 7
+    "focus": 7,
+    "years": 5
   },
   {
     "title": "PHP",
     "category": "language",
     "stars": 3,
     "focus": 1,
-    "icon": "php.png"
+    "icon": "php.png",
+    "years": 3
   },
   {
     "title": "Rust",
     "category": "language",
     "stars": 2,
     "focus": 2,
-    "icon": "rust.jpg"
+    "icon": "rust.jpg",
+    "years": 1
   },
   {
     "title": "Java",
     "category": "language",
     "stars": 2,
     "focus": 1,
-    "icon": "java.png"
+    "icon": "java.png",
+    "years": 3
   },
   {
     "title": "Go",
     "category": "language",
     "stars": 1,
     "focus": 2,
-    "icon": "go.png"
+    "icon": "go.png",
+    "years": 1
   },
   {
     "title": "Bash",
     "category": "language",
     "stars": 4,
     "focus": 2,
-    "icon": "bash.png"
+    "icon": "bash.png",
+    "years": 20
   },
   {
     "title": "Langchain",
     "category": "AI",
     "stars": 4,
     "focus": 7,
-    "icon": "langchain.png"
+    "icon": "langchain.png",
+    "years": 2
   },
   {
     "title": "PostgreSQL",
@@ -68,265 +77,351 @@
     "stars": 4,
     "focus": 4,
     "icon": "postgres.png",
-    "square": true
+    "square": true,
+    "years": 10
   },
   {
     "title": "MongoDB",
     "category": "database",
     "stars": 5,
     "focus": 4,
-    "icon": "mongodb.png"
+    "icon": "mongodb.png",
+    "years": 10
   },
   {
     "title": "FaunaDB",
     "category": "database",
     "stars": 3,
     "focus": 2,
-    "icon": "fauna.jpg"
+    "icon": "fauna.jpg",
+    "years": 1
   },
   {
     "title": "React",
     "category": "UI",
     "stars": 5,
     "focus": 6,
-    "icon": "react.png"
+    "icon": "react.png",
+    "years": 10
   },
   {
     "title": "React Native",
     "category": "UI",
     "stars": 4,
     "focus": 2,
-    "icon": "react-native.png"
+    "icon": "react-native.png",
+    "years": 2
   },
   {
     "title": "Material UI",
     "category": "UI",
     "stars": 5,
     "focus": 3,
-    "icon": "mui.png"
+    "icon": "mui.png",
+    "years": 5
   },
   {
     "title": "Storybook",
     "category": "UI",
     "stars": 4,
     "focus": 2,
-    "icon": "storybook.png"
+    "icon": "storybook.png",
+    "years": 4
   },
   {
     "title": "Jest",
     "category": "Testing",
     "stars": 5,
     "focus": 2,
-    "icon": "jest.png"
+    "icon": "jest.png",
+    "years": 5
   },
   {
     "title": "Cypress",
     "category": "Testing",
     "stars": 5,
     "focus": 2,
-    "icon": "cypress.jpg"
+    "icon": "cypress.jpg",
+    "years": 2
   },
   {
     "title": "OpenAI",
     "category": "AI",
     "stars": 5,
     "focus": 5,
-    "icon": "openai.png"
+    "icon": "openai.png",
+    "years": 2
   },
   {
     "title": "ChromaDB",
     "category": "AI",
     "stars": 4,
     "focus": 4,
-    "icon": "chroma.png"
+    "icon": "chroma.png",
+    "years": 2
   },
   {
     "title": "FAISS",
     "category": "AI",
     "stars": 4,
     "focus": 4,
-    "icon": "faiss.webp"
+    "icon": "faiss.webp",
+    "years": 2
   },
   {
     "title": "Pinecone",
     "category": "AI",
     "stars": 4,
     "focus": 4,
-    "icon": "pinecone.png"
+    "icon": "pinecone.png",
+    "years": 2
   },
   {
     "title": "Llama",
     "category": "AI",
     "stars": 4,
     "focus": 7,
-    "icon": "llama.png"
+    "icon": "llama.png",
+    "years": 2
   },
   {
     "title": "Whisper",
     "category": "AI",
     "stars": 5,
     "focus": 3,
-    "icon": "whisper.webp"
+    "icon": "whisper.webp",
+    "years": 1
   },
   {
     "title": "Easy OCR",
     "category": "AI",
     "stars": 5,
     "focus": 2,
-    "icon": "easyocr.png"
+    "icon": "easyocr.png",
+    "years": 1
   },
   {
     "title": "RTL",
     "category": "Testing",
     "stars": 5,
     "focus": 2,
-    "icon": "rtl.png"
+    "icon": "rtl.png",
+    "years": 3
   },
   {
     "title": "Elastic Search",
     "category": "database",
     "stars": 3,
     "focus": 2,
-    "icon": "elastic.png"
+    "icon": "elastic.png",
+    "years": 1
   },
   {
     "title": "TailWindCSS",
     "category": "UI",
     "stars": 4,
     "focus": 2,
-    "icon": "tailwind.png"
+    "icon": "tailwind.png",
+    "years": 1
   },
   {
     "title": "Puppeteer",
     "category": "Testing",
     "stars": 4,
     "focus": 1,
-    "icon": "puppeteer.png"
+    "icon": "puppeteer.png",
+    "years": 2
   },
   {
     "title": "HTML 5",
     "category": "UI",
     "stars": 5,
     "focus": 3,
-    "icon": "html5.jpg"
+    "icon": "html5.jpg",
+    "years": 15
   },
   {
     "title": "CSS",
     "category": "UI",
     "stars": 4,
     "focus": 3,
-    "icon": "css.png"
+    "icon": "css.png",
+    "years": 20
   },
   {
     "title": "SASS",
     "category": "UI",
     "stars": 4,
     "focus": 3,
-    "icon": "sass.png"
+    "icon": "sass.png",
+    "years": 5
   },
   {
     "title": "HuggingFace",
     "category": "AI",
     "stars": 4,
     "focus": 6,
-    "icon": "hf-logo.png"
+    "icon": "hf-logo.png",
+    "years": 2
   },
   {
     "title": "NextJS",
     "category": "Backend",
     "stars": 5,
     "focus": 4,
-    "icon": "next-js.svg"
+    "icon": "next-js.svg",
+    "years": 5
   },
   {
     "title": "AWS Lambda",
     "category": "Backend",
     "stars": 2,
     "focus": 2,
-    "icon": "lambda.png"
+    "icon": "lambda.png",
+    "years": 5
   },
   {
     "title": "Azure",
     "category": "Backend",
     "stars": 2,
     "focus": 2,
-    "icon": "azure.png"
+    "icon": "azure.png",
+    "years": 5
   },
   {
     "title": "GraphQL",
     "category": "Backend",
     "stars": 5,
     "focus": 7,
-    "icon": "graphql.png"
+    "icon": "graphql.png",
+    "years": 5
   },
   {
     "title": "Apollo",
     "category": "Backend",
     "stars": 5,
     "focus": 4,
-    "icon": "apollo.png"
+    "icon": "apollo.png",
+    "years": 5
   },
   {
     "title": "Firebase",
     "category": "Backend",
     "stars": 5,
     "focus": 3,
-    "icon": "firebase.png"
+    "icon": "firebase.png",
+    "years": 5
   },
   {
     "title": "Supabase",
     "category": "Backend",
     "stars": 4,
     "focus": 2,
-    "icon": "supabase.png"
+    "icon": "supabase.png",
+    "years": 1
   },
   {
     "title": "FastAPI",
     "category": "Backend",
     "stars": 4,
     "focus": 3,
-    "icon": "fastapi.svg"
+    "icon": "fastapi.svg",
+    "years": 2
   },
   {
     "title": "LangServe",
     "category": "Backend",
     "stars": 4,
     "focus": 3,
-    "icon": "langserve.png"
+    "icon": "langserve.png",
+    "years": 1
   },
   {
     "title": "OpenGraph",
     "category": "Other",
     "stars": 5,
     "focus": 1,
-    "icon": "og.png"
+    "icon": "og.png",
+    "years": 5
   },
   {
     "title": "TensorFlow",
     "category": "AI",
     "stars": 3,
     "focus": 7,
-    "icon": "tensorflow.png"
+    "icon": "tensorflow.png",
+    "years": 3
   },
   {
     "title": "PyTorch",
     "category": "AI",
     "stars": 3,
     "focus": 5,
-    "icon": "pytorch.png"
+    "icon": "pytorch.png",
+    "years": 3
   },
   {
     "title": "Zapier",
     "category": "AI",
     "stars": 4,
     "focus": 6,
-    "icon": "zapier.png"
+    "icon": "zapier.png",
+    "years": 3
   },
   {
     "title": "Make",
     "category": "AI",
     "stars": 4,
     "focus": 5,
-    "icon": "make.png"
+    "icon": "make.png",
+    "years": 2
+  },
+  {
+    "title": "Google Cloud Platform",
+    "category": "AI",
+    "stars": 3,
+    "focus": 3,
+    "icon": "gcp.png",
+    "years": 2
+  },
+  {
+    "title": "Redis",
+    "category": "database",
+    "stars": 4,
+    "focus": 4,
+    "icon": "redis.png",
+    "years": 2
+  },
+  {
+    "title": "Redux",
+    "category": "database",
+    "stars": 4,
+    "focus": 4,
+    "icon": "redux.svg",
+    "years": 2
+  },
+  {
+    "title": "NodeJS",
+    "category": "database",
+    "stars": 5,
+    "focus": 4,
+    "icon": "node.png",
+    "years": 2
+  },
+  {
+    "title": "Laravel",
+    "category": "database",
+    "stars": 2,
+    "focus": 4,
+    "icon": "laravel.png",
+    "years": 1
+  },
+  {
+    "title": "Express",
+    "category": "database",
+    "stars": 2,
+    "focus": 4,
+    "icon": "express-js.png",
+    "years": 1
   }
 ]

@@ -10,9 +10,10 @@ import ThumbDownIcon from "@mui/icons-material/ThumbDown";
 
 interface MessageProps {
   message: ChatMessage;
+  extra?: "warning";
 }
 
-export default function Message({ message }: MessageProps) {
+export default function Message({ message, extra }: MessageProps) {
   const matches = useMediaQuery("(min-width:600px)");
 
   return (
@@ -30,13 +31,20 @@ export default function Message({ message }: MessageProps) {
         sx={{ width: 60, height: 60 }}
       />
 
-      <Stack sx={{ maxWidth: "50%", minWidth: "20%" }}>
+      <Stack sx={{ maxWidth: matches ? "50%" : "90%", minWidth: "20%" }}>
         <Paper
           sx={{
             padding: 2,
             borderRadius: 2,
+            borderTopLeftRadius: message.type === ChatMessageType.AI ? 0 : 2,
+            borderTopRightRadius:
+              message.type === ChatMessageType.Human ? 0 : 2,
             backgroundColor:
-              message.type === ChatMessageType.AI ? "#369" : "#388e3c",
+              extra && extra === "warning"
+                ? "#ab47bc"
+                : message.type === ChatMessageType.AI
+                ? "#369"
+                : "#388e3c",
           }}
         >
           <Typography
