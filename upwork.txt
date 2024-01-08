@@ -1,0 +1,18 @@
+Hi, my name is Pierre and I am a seasoned full stack developer with 15+ years of experience and a passion for AI, especially LLMs.
+
+=====
+To learn more about me, you can chat with my AI persona at https://pierre-ai-full-stack.vercel.app/upwork/~01792dc04a9b00f279
+=====
+
+# Chatbot for an actual robot (Vuelo de Palabras, robot: Sanbot)
+
+The robot greets customers at the bookshop, recommends books, has fun conversations with people and can finalize sales.
+The chat model is based on a fine-tuned version of Llama and I am using LangChain to orchestrate the agent.
+
+# Microsoft teams bot (Simms & Associate)
+
+This Teams bot interacts with employees to help them finalize support for their customers and is using RAG and Llama to recover from previous cases, remember new ones and communicate with the end customers
+
+# LangChain agent (blinkin.io)
+
+Prototype for a LangChain agent using OpenAI to choose over a multi-modal toolkit including vision how to help customers on a very large set of different problems.
